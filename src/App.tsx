@@ -9,6 +9,13 @@ import Services from "./pages/Services";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import SEO from "./pages/services/SEO";
+import Photography from "./pages/services/Photography";
+import Development from "./pages/services/Development";
+import Ads from "./pages/services/Ads";
+import Design from "./pages/services/Design";
+import SocialMedia from "./pages/services/SocialMedia";
+import AI from "./pages/services/AI";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +29,13 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/services/seo" element={<SEO />} />
+          <Route path="/services/photography" element={<Photography />} />
+          <Route path="/services/development" element={<Development />} />
+          <Route path="/services/ads" element={<Ads />} />
+          <Route path="/services/design" element={<Design />} />
+          <Route path="/services/social-media" element={<SocialMedia />} />
+          <Route path="/services/ai" element={<AI />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
