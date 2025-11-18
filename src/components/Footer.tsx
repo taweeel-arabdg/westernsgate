@@ -16,11 +16,17 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4" />
-                <span>info@westerngate.sa</span>
+                <span>info@westernsgate.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" />
-                <span>المملكة العربية السعودية</span>
+                <span>المملكة العربية السعودية - جدة</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="font-medium">الموقع:</span>
+                <a href="https://www.westernsgate.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                  www.westernsgate.com
+                </a>
               </div>
             </div>
           </div>
@@ -51,14 +57,25 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-4">تواصل معنا</h3>
             <p className="mb-4">نحن هنا لمساعدتك في تحقيق أهدافك التسويقية</p>
-            <a 
-              href="https://wa.me/966557346167" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-block bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-3 rounded-lg transition-colors"
-            >
-              تواصل عبر واتساب
-            </a>
+            <div className="space-y-2">
+              <p className="text-sm">واتساب:</p>
+              <a 
+                href="https://wa.me/966557346167" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block bg-accent hover:bg-accent/90 text-accent-foreground px-4 py-2 rounded-lg transition-colors text-center mb-2"
+              >
+                +966557346167
+              </a>
+              <a 
+                href="https://wa.me/966549793703" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block bg-accent hover:bg-accent/90 text-accent-foreground px-4 py-2 rounded-lg transition-colors text-center"
+              >
+                +966549793703
+              </a>
+            </div>
           </div>
         </div>
 

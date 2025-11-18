@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ContactForm from "@/components/ContactForm";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -46,8 +46,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <div className="font-medium">البريد الإلكتروني</div>
-                      <a href="mailto:info@westerngate.sa" className="text-muted-foreground hover:text-accent">
-                        info@westerngate.sa
+                      <a href="mailto:info@westernsgate.com" className="text-muted-foreground hover:text-accent">
+                        info@westernsgate.com
                       </a>
                     </div>
                   </div>
@@ -58,7 +58,24 @@ const Contact = () => {
                     </div>
                     <div>
                       <div className="font-medium">العنوان</div>
-                      <p className="text-muted-foreground">المملكة العربية السعودية</p>
+                      <p className="text-muted-foreground">المملكة العربية السعودية - جدة</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-4">
+                    <div className="bg-accent/10 p-3 rounded-lg">
+                      <MessageCircle className="h-6 w-6 text-accent" />
+                    </div>
+                    <div>
+                      <div className="font-medium">واتساب</div>
+                      <div className="space-y-1">
+                        <a href="https://wa.me/966557346167" className="block text-muted-foreground hover:text-accent">
+                          +966557346167
+                        </a>
+                        <a href="https://wa.me/966549793703" className="block text-muted-foreground hover:text-accent">
+                          +966549793703
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
