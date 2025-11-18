@@ -40,9 +40,15 @@ const Index = () => {
               نشتغل على نتائجك. نحلل سوقك، ونبني حملات تمشي مع طريقة تفكير عميلك، ونضبط مسار المبيعات من أول نقرة إلى إقفال الصفقة
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                ابدأ مشروعك الآن
-                <ArrowLeft className="mr-2 h-5 w-5" />
+              <Button 
+                size="lg" 
+                className="bg-accent hover:bg-accent/90 text-accent-foreground"
+                asChild
+              >
+                <a href="https://wa.me/966557346167?text=مرحباً، أرغب في الاستفسار عن خدماتكم" target="_blank" rel="noopener noreferrer">
+                  تواصل معنا الآن
+                  <ArrowLeft className="mr-2 h-5 w-5" />
+                </a>
               </Button>
               <Button 
                 size="lg" 
