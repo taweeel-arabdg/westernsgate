@@ -37,7 +37,7 @@ const Index = () => {
               شريكك الموثوق في التسويق الرقمي
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-muted-foreground leading-relaxed">
-              نحول أفكارك إلى واقع رقمي ناجح ونساعدك على تحقيق أهدافك التسويقية بحلول مبتكرة واحترافية
+              نشتغل على نتائجك. نحلل سوقك، ونبني حملات تمشي مع طريقة تفكير عميلك، ونضبط مسار المبيعات من أول نقرة إلى إقفال الصفقة
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
               <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
