@@ -164,7 +164,7 @@ const Portfolio = () => {
                 variant="secondary" 
                 size="lg" 
                 className="gap-2"
-                onClick={() => window.location.href = '/contact'}
+                onClick={() => window.open('https://wa.me/966557346167?text=مرحباً، أريد البدء بمشروعي الآن', '_blank')}
               >
                 ابدأ مشروعك الآن
                 <ArrowLeft className="w-4 h-4" />
