@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ContactForm from "@/components/ContactForm";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, CheckCircle2, Sparkles, Target, Rocket, Award } from "lucide-react";
 import furhomeLogo from "@/assets/partners/furhome.svg";
@@ -43,8 +44,58 @@ const Index = () => {
     { step: "4", title: "التسليم", description: "نسلمك مشروعك بنجاح" },
   ];
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "بوابة الغربية",
+    "image": "https://lovable.dev/opengraph-image-p98pqg.png",
+    "description": "وكالة بوابة الغربية للتسويق الرقمي - نقدم خدمات SEO، تصميم المواقع، إدارة وسائل التواصل الاجتماعي، والحملات الإعلانية",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3946",
+      "addressLocality": "Jeddah",
+      "addressCountry": "SA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "21.5433",
+      "longitude": "39.1728"
+    },
+    "url": "https://westernsgate.com",
+    "telephone": "+966557346167",
+    "priceRange": "$$",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    ],
+    "sameAs": [
+      "https://wa.me/966557346167"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "50"
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background">
+      <SEO 
+        title="بوابة الغربية - وكالة تسويق رقمي احترافية في السعودية"
+        description="وكالة بوابة الغربية للتسويق الرقمي - نقدم خدمات SEO، تصميم المواقع، إدارة وسائل التواصل الاجتماعي، والحملات الإعلانية في السعودية"
+        keywords={["تسويق رقمي السعودية", "SEO جدة", "تصميم مواقع", "إدارة سوشيال ميديا", "حملات إعلانية", "تصوير احترافي", "ذكاء اصطناعي"]}
+        structuredData={structuredData}
+      />
       <Header />
       <WhatsAppButton />
 
