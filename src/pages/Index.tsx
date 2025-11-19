@@ -10,9 +10,12 @@ import byotatLogo from "@/assets/partners/byotat.webp";
 import logo1 from "@/assets/partners/logo-1.svg";
 import logoMini from "@/assets/partners/logo-mini.svg";
 import partner6 from "@/assets/partners/partner-6.avif";
+import sanyLogo from "@/assets/partners/sany.png";
+import smzLogo from "@/assets/partners/smz.jpg";
+import copperLogo from "@/assets/partners/copper.jpg";
 
 const Index = () => {
-  const partnerLogos = [biscotiLogo, mamonaLogo, byotatLogo, logo1, logoMini, partner6];
+  const partnerLogos = [biscotiLogo, mamonaLogo, byotatLogo, logo1, logoMini, partner6, sanyLogo, smzLogo, copperLogo];
   
   const services = [
     { title: "تحسين محركات البحث SEO", icon: Target, link: "/services/seo" },
