@@ -58,7 +58,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <div className="font-medium">العنوان</div>
-                      <p className="text-muted-foreground">المملكة العربية السعودية - جدة</p>
+                      <p className="text-muted-foreground">جدة - حي الصفا - شارع التحلية</p>
                     </div>
                   </div>
 
