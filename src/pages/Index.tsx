@@ -199,7 +199,7 @@ const Index = () => {
             </div>
             <div>
               <h3 className="font-bold text-lg mb-2">العنوان</h3>
-              <p>المملكة العربية السعودية</p>
+              <p>3946, Jeddah, Saudi Arabia</p>
             </div>
           </div>
         </div>
