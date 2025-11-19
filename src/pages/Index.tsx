@@ -58,8 +58,9 @@ const Index = () => {
     "description": "وكالة بوابة الغربية للتسويق الرقمي - نقدم خدمات SEO، تصميم المواقع، إدارة وسائل التواصل الاجتماعي، والحملات الإعلانية",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "3946",
-      "addressLocality": "Jeddah",
+      "streetAddress": "شارع التحلية، حي الصفا",
+      "addressLocality": "جدة",
+      "addressRegion": "مكة المكرمة",
       "addressCountry": "SA"
     },
     "geo": {
@@ -259,7 +260,7 @@ const Index = () => {
             </div>
             <div>
               <h3 className="font-bold text-lg mb-2">العنوان</h3>
-              <p>3946, Jeddah, Saudi Arabia</p>
+              <p>المملكة العربية السعودية - جدة - حي الصفا - شارع التحلية</p>
             </div>
           </div>
         </div>

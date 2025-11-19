@@ -36,8 +36,8 @@ const Footer = () => {
 
           <div>
             <h3 className="font-bold text-lg mb-4">تواصل معنا</h3>
-            <p className="mb-4">نحن هنا لمساعدتك في تحقيق أهدافك التسويقية</p>
-            <div className="space-y-2">
+            <p className="mb-2 text-sm">المملكة العربية السعودية - جدة - حي الصفا - شارع التحلية</p>
+            <div className="space-y-2 mt-4">
               <p className="text-sm">واتساب:</p>
               <a 
                 href="https://wa.me/966557346167" 
