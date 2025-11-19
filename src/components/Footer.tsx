@@ -9,26 +9,6 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8" dir="rtl">
           <div>
             <img src={logo} alt="بوابة الغربية" className="h-16 mb-4 brightness-0 invert" />
-            <div className="space-y-3">
-              <div className="flex items-center gap-2">
-                <Phone className="h-4 w-4" />
-                <span>+966557346167</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Mail className="h-4 w-4" />
-                <span>info@westernsgate.com</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <MapPin className="h-4 w-4" />
-                <span>المملكة العربية السعودية - جدة</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="font-medium">الموقع:</span>
-                <a href="https://www.westernsgate.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
-                  www.westernsgate.com
-                </a>
-              </div>
-            </div>
           </div>
 
           <div>

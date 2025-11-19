@@ -27,13 +27,13 @@ const Index = () => {
   const secondRowLogos = partnerLogos.slice(7);
   
   const services = [
-    { title: "تحسين محركات البحث SEO", icon: Target, link: "/services/seo" },
-    { title: "التصوير الإبداعي", icon: Sparkles, link: "/services/photography" },
-    { title: "برمجة المواقع الإلكترونية", icon: Rocket, link: "/services/development" },
-    { title: "حملات إعلانية احترافية", icon: Award, link: "/services/ads" },
-    { title: "تصاميم احترافية", icon: Sparkles, link: "/services/design" },
-    { title: "إدارة منصات التواصل الاجتماعي", icon: Target, link: "/services/social-media" },
-    { title: "حلول الذكاء الاصطناعي AI", icon: Rocket, link: "/services/ai" },
+    { title: "تحسين محركات البحث SEO", icon: Target, link: "/services/seo", description: "نحلل موقعك ونحسّن ظهوره في نتائج البحث لجذب المزيد من العملاء المحتملين" },
+    { title: "التصوير الإبداعي", icon: Sparkles, link: "/services/photography", description: "التقط لحظاتك بلمسة احترافية تعكس هوية علامتك التجارية" },
+    { title: "برمجة المواقع الإلكترونية", icon: Rocket, link: "/services/development", description: "نبني مواقع سريعة وآمنة تحول الزوار إلى عملاء فعليين" },
+    { title: "حملات إعلانية احترافية", icon: Award, link: "/services/ads", description: "حملات مدروسة تستهدف جمهورك بدقة وتحقق عائد استثمار مرتفع" },
+    { title: "تصاميم احترافية", icon: Sparkles, link: "/services/design", description: "تصاميم جذابة تميز علامتك التجارية وتترك انطباعاً لا يُنسى" },
+    { title: "إدارة منصات التواصل الاجتماعي", icon: Target, link: "/services/social-media", description: "نبني حضورك الرقمي ونتفاعل مع جمهورك بطريقة تزيد الولاء والمبيعات" },
+    { title: "حلول الذكاء الاصطناعي AI", icon: Rocket, link: "/services/ai", description: "استفد من تقنيات الذكاء الاصطناعي لأتمتة عملياتك وتحسين كفاءة أعمالك" },
   ];
 
   const workSteps = [
@@ -121,7 +121,7 @@ const Index = () => {
                 <service.icon className="h-12 w-12 text-accent mb-4" />
                 <h3 className="text-xl font-bold mb-2">{service.title}</h3>
                 <p className="text-muted-foreground mb-4">
-                  نقدم لك أفضل الحلول في {service.title} لتحقيق أهدافك التسويقية
+                  {service.description}
                 </p>
                 <a href={service.link} className="text-accent hover:text-accent/80 font-medium inline-flex items-center">
                   اعرف المزيد
