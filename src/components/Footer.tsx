@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground pt-16 pb-8">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8" dir="rtl">
-          <div>
-            <img src={logo} alt="بوابة الغربية" className="h-16 mb-4 brightness-0 invert" />
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8" dir="rtl">
+          <div className="col-span-2 md:col-span-1">
+            <img src={logo} alt="بوابة الغربية" className="h-12 md:h-16 mb-4 brightness-0 invert" />
           </div>
 
           <div>
