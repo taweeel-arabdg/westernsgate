@@ -7,7 +7,7 @@ import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, CheckCircle2, Sparkles, Target, Rocket, Award } from "lucide-react";
 import { useCountUp } from "@/hooks/useCountUp";
-import heroTeam from "@/assets/hero-team.jpg";
+import heroTeam from "@/assets/hero-team-real.jpg";
 import furhomeLogo from "@/assets/partners/furhome.svg";
 import biscotiLogo from "@/assets/partners/biscoti.webp";
 import mamonaLogo from "@/assets/partners/mamona.png";
@@ -108,18 +108,30 @@ const Index = () => {
       <WhatsAppButton />
 
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 overflow-hidden">
+      <section className="relative py-12 md:py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-accent/10 to-transparent"></div>
         <div className="container mx-auto px-4 relative" dir="rtl">
-          <div className="grid md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
-            <div className="text-center md:text-right">
+          <div className="max-w-6xl mx-auto">
+            {/* Image First */}
+            <div className="mb-12 animate-fade-in">
+              <div className="rounded-2xl overflow-hidden shadow-2xl border border-border">
+                <img 
+                  src={heroTeam} 
+                  alt="فريق بوابة الغربية للتسويق الرقمي" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Text Below */}
+            <div className="text-center animate-fade-in">
               <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
                 شريكك الموثوق في التسويق الرقمي
               </h1>
-              <p className="text-xl md:text-2xl mb-8 text-muted-foreground leading-relaxed">
+              <p className="text-xl md:text-2xl mb-8 text-muted-foreground leading-relaxed max-w-4xl mx-auto">
                 نشتغل على نتائجك. نحلل سوقك، ونبني حملات تمشي مع طريقة تفكير عميلك، ونضبط مسار المبيعات من أول نقرة إلى إقفال الصفقة
               </p>
-              <div className="flex gap-4 justify-center md:justify-end flex-wrap">
+              <div className="flex gap-4 justify-center flex-wrap">
                 <Button 
                   size="lg" 
                   className="bg-accent hover:bg-accent/90 text-accent-foreground"
@@ -137,15 +149,6 @@ const Index = () => {
                 >
                   تعرف على خدماتنا
                 </Button>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="rounded-2xl overflow-hidden shadow-2xl border border-border">
-                <img 
-                  src={heroTeam} 
-                  alt="فريق بوابة الغربية للتسويق الرقمي" 
-                  className="w-full h-auto object-cover"
-                />
               </div>
             </div>
           </div>
