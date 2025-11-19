@@ -14,7 +14,7 @@ const WhatsAppButton = () => {
       {/* Pulsing rings */}
       <div className="relative">
         <div className="absolute inset-0 animate-ping">
-          <div className="w-12 h-12 md:w-14 md:h-14 bg-[#25D366] rounded-full opacity-75"></div>
+          <div className="w-14 h-14 md:w-16 md:h-16 bg-[#25D366] rounded-full opacity-75"></div>
         </div>
         
         {/* Main button */}
@@ -22,11 +22,11 @@ const WhatsAppButton = () => {
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="relative flex items-center justify-center w-12 h-12 md:w-14 md:h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:scale-110 transition-transform duration-300 hover:shadow-2xl"
+          className="relative flex items-center justify-center w-14 h-14 md:w-16 md:h-16 bg-[#25D366] text-white rounded-full shadow-lg hover:scale-110 transition-transform duration-300 hover:shadow-2xl"
           aria-label="تواصل عبر واتساب"
         >
           <svg 
-            className="h-6 w-6 md:h-7 md:w-7" 
+            className="h-7 w-7 md:h-8 md:w-8" 
             viewBox="0 0 24 24" 
             fill="white"
             xmlns="http://www.w3.org/2000/svg"
