@@ -29,8 +29,9 @@ const SEO = ({
     "description": description,
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "3946",
-      "addressLocality": "Jeddah",
+      "streetAddress": "شارع التحلية، حي الصفا",
+      "addressLocality": "جدة",
+      "addressRegion": "مكة المكرمة",
       "addressCountry": "SA"
     },
     "contactPoint": {
