@@ -7,6 +7,7 @@ import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, CheckCircle2, Sparkles, Target, Rocket, Award } from "lucide-react";
 import { useCountUp } from "@/hooks/useCountUp";
+import heroTeam from "@/assets/hero-team.jpg";
 import furhomeLogo from "@/assets/partners/furhome.svg";
 import biscotiLogo from "@/assets/partners/biscoti.webp";
 import mamonaLogo from "@/assets/partners/mamona.png";
@@ -110,31 +111,42 @@ const Index = () => {
       <section className="relative py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-accent/10 to-transparent"></div>
         <div className="container mx-auto px-4 relative" dir="rtl">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
-              شريكك الموثوق في التسويق الرقمي
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-muted-foreground leading-relaxed">
-              نشتغل على نتائجك. نحلل سوقك، ونبني حملات تمشي مع طريقة تفكير عميلك، ونضبط مسار المبيعات من أول نقرة إلى إقفال الصفقة
-            </p>
-            <div className="flex gap-4 justify-center flex-wrap">
-              <Button 
-                size="lg" 
-                className="bg-accent hover:bg-accent/90 text-accent-foreground"
-                asChild
-              >
-                <a href="https://wa.me/966557346167?text=مرحباً، أرغب في الاستفسار عن خدماتكم" target="_blank" rel="noopener noreferrer">
-                  تواصل معنا الآن
-                  <ArrowLeft className="mr-2 h-5 w-5" />
-                </a>
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline"
-                onClick={() => document.getElementById('services-section')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                تعرف على خدماتنا
-              </Button>
+          <div className="grid md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+            <div className="text-center md:text-right">
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
+                شريكك الموثوق في التسويق الرقمي
+              </h1>
+              <p className="text-xl md:text-2xl mb-8 text-muted-foreground leading-relaxed">
+                نشتغل على نتائجك. نحلل سوقك، ونبني حملات تمشي مع طريقة تفكير عميلك، ونضبط مسار المبيعات من أول نقرة إلى إقفال الصفقة
+              </p>
+              <div className="flex gap-4 justify-center md:justify-end flex-wrap">
+                <Button 
+                  size="lg" 
+                  className="bg-accent hover:bg-accent/90 text-accent-foreground"
+                  asChild
+                >
+                  <a href="https://wa.me/966557346167?text=مرحباً، أرغب في الاستفسار عن خدماتكم" target="_blank" rel="noopener noreferrer">
+                    تواصل معنا الآن
+                    <ArrowLeft className="mr-2 h-5 w-5" />
+                  </a>
+                </Button>
+                <Button 
+                  size="lg" 
+                  variant="outline"
+                  onClick={() => document.getElementById('services-section')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  تعرف على خدماتنا
+                </Button>
+              </div>
+            </div>
+            <div className="relative">
+              <div className="rounded-2xl overflow-hidden shadow-2xl border border-border">
+                <img 
+                  src={heroTeam} 
+                  alt="فريق بوابة الغربية للتسويق الرقمي" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
