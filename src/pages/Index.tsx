@@ -4,6 +4,12 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import ContactForm from "@/components/ContactForm";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, CheckCircle2, Sparkles, Target, Rocket, Award } from "lucide-react";
+import biscotiLogo from "@/assets/partners/biscoti.webp";
+import mamonaLogo from "@/assets/partners/mamona.png";
+import byotatLogo from "@/assets/partners/byotat.webp";
+import logo1 from "@/assets/partners/logo-1.svg";
+import logoMini from "@/assets/partners/logo-mini.svg";
+import partner6 from "@/assets/partners/partner-6.avif";
 
 const Index = () => {
   const services = [
@@ -135,10 +141,21 @@ const Index = () => {
       <section className="py-16 md:py-24 overflow-hidden">
         <div className="container mx-auto px-4" dir="rtl">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">شركاء النجاح</h2>
-          <div className="flex items-center gap-12 animate-[scroll_20s_linear_infinite]">
-            {[1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6].map((_, index) => (
-              <div key={index} className="flex-shrink-0 w-40 h-20 bg-muted rounded-lg flex items-center justify-center">
-                <span className="text-muted-foreground font-medium">شريك {index + 1}</span>
+          
+          {/* First Row - Right to Left */}
+          <div className="flex items-center gap-12 mb-8 animate-[scroll-rtl_15s_linear_infinite]">
+            {[biscotiLogo, mamonaLogo, byotatLogo, logo1, logoMini, partner6, biscotiLogo, mamonaLogo, byotatLogo, logo1, logoMini, partner6].map((logo, index) => (
+              <div key={`row1-${index}`} className="flex-shrink-0 w-40 h-20 bg-background border border-border rounded-lg flex items-center justify-center p-4">
+                <img src={logo} alt={`شريك ${index + 1}`} className="max-w-full max-h-full object-contain" />
+              </div>
+            ))}
+          </div>
+
+          {/* Second Row - Left to Right */}
+          <div className="flex items-center gap-12 animate-[scroll-ltr_15s_linear_infinite]">
+            {[logoMini, partner6, biscotiLogo, mamonaLogo, byotatLogo, logo1, logoMini, partner6, biscotiLogo, mamonaLogo, byotatLogo, logo1].map((logo, index) => (
+              <div key={`row2-${index}`} className="flex-shrink-0 w-40 h-20 bg-background border border-border rounded-lg flex items-center justify-center p-4">
+                <img src={logo} alt={`شريك ${index + 1}`} className="max-w-full max-h-full object-contain" />
               </div>
             ))}
           </div>
