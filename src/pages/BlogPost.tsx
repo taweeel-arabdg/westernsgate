@@ -97,8 +97,13 @@ const BlogPost = () => {
             </div>
           </div>
 
-          <div className="h-64 md:h-96 bg-gradient-to-br from-accent/20 to-accent/5 rounded-lg mb-12 flex items-center justify-center">
-            <Tag className="w-24 h-24 text-accent/30" />
+          <div className="h-64 md:h-96 rounded-lg mb-12 overflow-hidden">
+            <img 
+              src={post.image} 
+              alt={post.title}
+              className="w-full h-full object-cover"
+              loading="eager"
+            />
           </div>
 
           <div className="prose prose-lg max-w-none mb-12">
