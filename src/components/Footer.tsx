@@ -46,7 +46,7 @@ const Footer = () => {
                 className="block bg-accent hover:bg-accent/90 text-accent-foreground px-4 py-2 rounded-lg transition-colors text-center mb-2"
                 dir="ltr"
               >
-                966+ 557346167
+                +966 55 734 6167
               </a>
               <a 
                 href="https://wa.me/966549793703" 
@@ -55,7 +55,7 @@ const Footer = () => {
                 className="block bg-accent hover:bg-accent/90 text-accent-foreground px-4 py-2 rounded-lg transition-colors text-center"
                 dir="ltr"
               >
-                966+ 549793703
+                +966 54 979 3703
               </a>
             </div>
           </div>

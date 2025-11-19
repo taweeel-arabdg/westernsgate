@@ -191,7 +191,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
               <h3 className="font-bold text-lg mb-2">اتصل بنا</h3>
-              <p dir="ltr">966+ 557346167</p>
+              <p dir="ltr">+966 55 734 6167</p>
             </div>
             <div>
               <h3 className="font-bold text-lg mb-2">البريد الإلكتروني</h3>
