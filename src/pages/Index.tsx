@@ -2,9 +2,11 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ContactForm from "@/components/ContactForm";
+import FAQ from "@/components/FAQ";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, CheckCircle2, Sparkles, Target, Rocket, Award } from "lucide-react";
+import { useCountUp } from "@/hooks/useCountUp";
 import furhomeLogo from "@/assets/partners/furhome.svg";
 import biscotiLogo from "@/assets/partners/biscoti.webp";
 import mamonaLogo from "@/assets/partners/mamona.png";
@@ -21,6 +23,10 @@ import partner8 from "@/assets/partners/partner-8.png";
 import partner9 from "@/assets/partners/partner-9.avif";
 
 const Index = () => {
+  const projectsCount = useCountUp({ end: 500, suffix: "+" });
+  const satisfactionCount = useCountUp({ end: 98, suffix: "%" });
+  const experienceCount = useCountUp({ end: 10, suffix: "+" });
+
   const partnerLogos = [biscotiLogo, mamonaLogo, byotatLogo, logo1, logoMini, furhomeLogo, partner6, sanyLogo, smzLogo, copperLogo, shurfahLogo, partner7, partner8, partner9];
   
   // Split logos into two rows
@@ -142,16 +148,16 @@ const Index = () => {
               بوابة الغربية هي وكالة تسويق رقمي رائدة في المملكة العربية السعودية. نفخر بخبرتنا الواسعة في تقديم حلول تسويقية متكاملة ساعدت مئات الشركات على تحقيق نمو استثنائي في مبيعاتها وتعزيز حضورها الرقمي.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-              <div className="text-center">
-                <div className="text-4xl font-bold text-accent mb-2">500+</div>
+              <div className="text-center" ref={projectsCount.ref}>
+                <div className="text-4xl font-bold text-accent mb-2">{projectsCount.count}</div>
                 <p className="text-muted-foreground">مشروع ناجح</p>
               </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-accent mb-2">98%</div>
+              <div className="text-center" ref={satisfactionCount.ref}>
+                <div className="text-4xl font-bold text-accent mb-2">{satisfactionCount.count}</div>
                 <p className="text-muted-foreground">رضا العملاء</p>
               </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-accent mb-2">10+</div>
+              <div className="text-center" ref={experienceCount.ref}>
+                <div className="text-4xl font-bold text-accent mb-2">{experienceCount.count}</div>
                 <p className="text-muted-foreground">سنوات خبرة</p>
               </div>
             </div>
@@ -226,6 +232,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQ />
 
       {/* Contact Form Section */}
       <section className="py-16 md:py-24 bg-muted/30">
