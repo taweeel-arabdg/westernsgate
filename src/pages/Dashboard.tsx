@@ -10,7 +10,7 @@ import { Badge } from '@/components/ui/badge';
 import { supabase } from '@/integrations/supabase/client';
 import { toast } from 'sonner';
 import SEO from '@/components/SEO';
-import { LogOut, Code, Activity, Mail, Users, TrendingUp, Globe } from 'lucide-react';
+import { LogOut, Code, Activity, Mail, Users, TrendingUp, Globe, Copy, Check } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 interface GTMConfig {
@@ -53,6 +53,7 @@ export default function Dashboard() {
     todayEvents: 0,
     todayContacts: 0,
   });
+  const [copiedId, setCopiedId] = useState<string | null>(null);
 
   useEffect(() => {
     if (!authLoading && !user) {
@@ -201,6 +202,29 @@ export default function Dashboard() {
       toast.success('تم الحذف بنجاح');
       loadGTMConfigs();
     }
+  };
+
+  const copyGTMCode = (containerId: string) => {
+    const gtmCode = `<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','${containerId}');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${containerId}"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->`;
+
+    navigator.clipboard.writeText(gtmCode);
+    setCopiedId(containerId);
+    toast.success('تم نسخ كود GTM');
+    
+    setTimeout(() => {
+      setCopiedId(null);
+    }, 2000);
   };
 
   if (authLoading) {
@@ -363,6 +387,7 @@ export default function Dashboard() {
                         <TableHead>الاسم</TableHead>
                         <TableHead>الحالة</TableHead>
                         <TableHead>تاريخ الإضافة</TableHead>
+                        <TableHead>نسخ الكود</TableHead>
                         <TableHead>الإجراءات</TableHead>
                       </TableRow>
                     </TableHeader>
@@ -378,6 +403,26 @@ export default function Dashboard() {
                           </TableCell>
                           <TableCell>
                             {new Date(config.created_at).toLocaleDateString('ar-SA')}
+                          </TableCell>
+                          <TableCell>
+                            <Button
+                              size="sm"
+                              variant="outline"
+                              onClick={() => copyGTMCode(config.container_id)}
+                              className="gap-2"
+                            >
+                              {copiedId === config.container_id ? (
+                                <>
+                                  <Check className="h-4 w-4" />
+                                  تم النسخ
+                                </>
+                              ) : (
+                                <>
+                                  <Copy className="h-4 w-4" />
+                                  نسخ الكود
+                                </>
+                              )}
+                            </Button>
                           </TableCell>
                           <TableCell>
                             <div className="flex gap-2">
