@@ -82,7 +82,7 @@ const ContactForm = () => {
         </Button>
         <div className="mt-4 pt-4 border-t border-border text-center">
           <p className="text-sm text-muted-foreground">
-            الرياض، المملكة العربية السعودية
+            3946, Jeddah, Saudi Arabia
           </p>
         </div>
       </form>
