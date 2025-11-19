@@ -80,6 +80,11 @@ const ContactForm = () => {
         <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
           إرسال
         </Button>
+        <div className="mt-4 pt-4 border-t border-border text-center">
+          <p className="text-sm text-muted-foreground">
+            الرياض، المملكة العربية السعودية
+          </p>
+        </div>
       </form>
     </div>
   );
