@@ -4,6 +4,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import ContactForm from "@/components/ContactForm";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, CheckCircle2, Sparkles, Target, Rocket, Award } from "lucide-react";
+import furhomeLogo from "@/assets/partners/furhome.svg";
 import biscotiLogo from "@/assets/partners/biscoti.webp";
 import mamonaLogo from "@/assets/partners/mamona.png";
 import byotatLogo from "@/assets/partners/byotat.webp";
@@ -20,7 +21,7 @@ import partner8 from "@/assets/partners/partner-8.png";
 import partner9 from "@/assets/partners/partner-9.avif";
 
 const Index = () => {
-  const partnerLogos = [biscotiLogo, mamonaLogo, byotatLogo, logo1, logoMini, partner6, sanyLogo, smzLogo, copperLogo, shurfahLogo, partner7, partner8, partner9];
+  const partnerLogos = [biscotiLogo, mamonaLogo, byotatLogo, logo1, logoMini, furhomeLogo, partner6, sanyLogo, smzLogo, copperLogo, shurfahLogo, shurfahAltLogo, partner7, partner8, partner9];
   
   const services = [
     { title: "تحسين محركات البحث SEO", icon: Target, link: "/services/seo" },
@@ -154,7 +155,7 @@ const Index = () => {
           
           {/* First Row - Right to Left */}
           <div className="flex items-center gap-12 mb-8 animate-[scroll-rtl_10s_linear_infinite]">
-            {[...partnerLogos, ...partnerLogos, ...partnerLogos].map((logo, index) => (
+            {[...partnerLogos.slice(0, 8), ...partnerLogos.slice(0, 8), ...partnerLogos.slice(0, 8)].map((logo, index) => (
               <div key={`row1-${index}`} className="flex-shrink-0 w-40 h-20 bg-background border border-border rounded-lg flex items-center justify-center p-4">
                 <img src={logo} alt={`شريك ${index + 1}`} className="max-w-full max-h-full object-contain" />
               </div>
@@ -163,7 +164,7 @@ const Index = () => {
 
           {/* Second Row - Left to Right */}
           <div className="flex items-center gap-12 animate-[scroll-ltr_10s_linear_infinite]">
-            {[...partnerLogos, ...partnerLogos, ...partnerLogos].map((logo, index) => (
+            {[...partnerLogos.slice(8), ...partnerLogos.slice(8), ...partnerLogos.slice(8)].map((logo, index) => (
               <div key={`row2-${index}`} className="flex-shrink-0 w-40 h-20 bg-background border border-border rounded-lg flex items-center justify-center p-4">
                 <img src={logo} alt={`شريك ${index + 1}`} className="max-w-full max-h-full object-contain" />
               </div>
