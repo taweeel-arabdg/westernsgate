@@ -5,16 +5,16 @@ const WhatsAppButton = () => {
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex items-center gap-3">
-      {/* Text label */}
-      <div className="bg-[#25D366] text-white px-4 py-2 rounded-lg shadow-lg font-medium whitespace-nowrap">
+    <div className="fixed bottom-4 md:bottom-6 right-4 md:right-6 z-50 flex items-center gap-2 md:gap-3">
+      {/* Text label - responsive sizing */}
+      <div className="hidden sm:block bg-[#25D366] text-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg shadow-lg font-medium whitespace-nowrap text-sm md:text-base">
         تواصل معنا الآن
       </div>
       
       {/* Pulsing rings */}
       <div className="relative">
         <div className="absolute inset-0 animate-ping">
-          <div className="w-14 h-14 bg-[#25D366] rounded-full opacity-75"></div>
+          <div className="w-12 h-12 md:w-14 md:h-14 bg-[#25D366] rounded-full opacity-75"></div>
         </div>
         
         {/* Main button */}
@@ -22,11 +22,11 @@ const WhatsAppButton = () => {
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="relative flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:scale-110 transition-transform duration-300 hover:shadow-2xl"
+          className="relative flex items-center justify-center w-12 h-12 md:w-14 md:h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:scale-110 transition-transform duration-300 hover:shadow-2xl"
           aria-label="تواصل عبر واتساب"
         >
           <svg 
-            className="h-7 w-7" 
+            className="h-6 w-6 md:h-7 md:w-7" 
             viewBox="0 0 24 24" 
             fill="white"
             xmlns="http://www.w3.org/2000/svg"
