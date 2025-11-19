@@ -30,6 +30,9 @@ const Header = () => {
             <Link to="/services" className="text-foreground hover:text-accent transition-colors font-medium">
               خدماتنا
             </Link>
+            <Link to="/portfolio" className="text-foreground hover:text-accent transition-colors font-medium">
+              معرض الأعمال
+            </Link>
             <Link to="/blog" className="text-foreground hover:text-accent transition-colors font-medium">
               المدونة
             </Link>
@@ -66,6 +69,13 @@ const Header = () => {
                   onClick={() => setOpen(false)}
                 >
                   خدماتنا
+                </Link>
+                <Link 
+                  to="/portfolio" 
+                  className="text-foreground hover:text-accent transition-colors font-medium text-lg py-2"
+                  onClick={() => setOpen(false)}
+                >
+                  معرض الأعمال
                 </Link>
                 <Link 
                   to="/blog" 
