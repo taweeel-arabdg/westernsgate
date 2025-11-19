@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Menu } from "lucide-react";
+import { Menu, LogIn } from "lucide-react";
 import { useState } from "react";
 import logo from "@/assets/logo.png";
 import {
@@ -8,9 +8,11 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
+import { useAuth } from "@/contexts/AuthContext";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const { user, isAdmin } = useAuth();
 
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
@@ -39,6 +41,19 @@ const Header = () => {
             <Link to="/contact" className="text-foreground hover:text-accent transition-colors font-medium">
               تواصل معنا
             </Link>
+            {user && isAdmin && (
+              <Button asChild variant="outline" size="sm">
+                <Link to="/dashboard">لوحة التحكم</Link>
+              </Button>
+            )}
+            {!user && (
+              <Button asChild variant="ghost" size="sm">
+                <Link to="/auth">
+                  <LogIn className="ml-2 h-4 w-4" />
+                  تسجيل الدخول
+                </Link>
+              </Button>
+            )}
           </div>
 
           <Sheet open={open} onOpenChange={setOpen}>
@@ -91,6 +106,24 @@ const Header = () => {
                 >
                   تواصل معنا
                 </Link>
+                {user && isAdmin && (
+                  <Link 
+                    to="/dashboard" 
+                    className="text-foreground hover:text-accent transition-colors font-medium text-lg py-2"
+                    onClick={() => setOpen(false)}
+                  >
+                    لوحة التحكم
+                  </Link>
+                )}
+                {!user && (
+                  <Link 
+                    to="/auth" 
+                    className="text-foreground hover:text-accent transition-colors font-medium text-lg py-2"
+                    onClick={() => setOpen(false)}
+                  >
+                    تسجيل الدخول
+                  </Link>
+                )}
               </nav>
             </SheetContent>
           </Sheet>
