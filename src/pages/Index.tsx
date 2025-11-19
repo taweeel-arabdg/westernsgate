@@ -157,7 +157,7 @@ const Index = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">شركاء النجاح</h2>
           
           {/* First Row - Right to Left */}
-          <div className="flex items-center gap-12 mb-8 animate-[scroll-rtl_30s_linear_infinite]">
+          <div className="flex items-center gap-12 mb-8 animate-[scroll-rtl_15s_linear_infinite]">
             {[...firstRowLogos, ...firstRowLogos].map((logo, index) => (
               <div key={`row1-${index}`} className="flex-shrink-0 w-40 h-20 bg-background border border-border rounded-lg flex items-center justify-center p-4">
                 <img src={logo} alt={`شريك ${index + 1}`} className="max-w-full max-h-full object-contain" />
@@ -166,7 +166,7 @@ const Index = () => {
           </div>
 
           {/* Second Row - Left to Right */}
-          <div className="flex items-center gap-12 animate-[scroll-ltr_30s_linear_infinite]">
+          <div className="flex items-center gap-12 animate-[scroll-ltr_15s_linear_infinite]">
             {[...secondRowLogos, ...secondRowLogos].map((logo, index) => (
               <div key={`row2-${index}`} className="flex-shrink-0 w-40 h-20 bg-background border border-border rounded-lg flex items-center justify-center p-4">
                 <img src={logo} alt={`شريك ${index + 1}`} className="max-w-full max-h-full object-contain" />
