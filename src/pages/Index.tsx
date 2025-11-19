@@ -15,9 +15,12 @@ import smzLogo from "@/assets/partners/smz.jpg";
 import copperLogo from "@/assets/partners/copper.jpg";
 import shurfahLogo from "@/assets/partners/shurfah.jpg";
 import shurfahAltLogo from "@/assets/partners/shurfah-alt.jpg";
+import partner7 from "@/assets/partners/partner-7.avif";
+import partner8 from "@/assets/partners/partner-8.png";
+import partner9 from "@/assets/partners/partner-9.avif";
 
 const Index = () => {
-  const partnerLogos = [biscotiLogo, mamonaLogo, byotatLogo, logo1, logoMini, partner6, sanyLogo, smzLogo, copperLogo, shurfahLogo];
+  const partnerLogos = [biscotiLogo, mamonaLogo, byotatLogo, logo1, logoMini, partner6, sanyLogo, smzLogo, copperLogo, shurfahLogo, partner7, partner8, partner9];
   
   const services = [
     { title: "تحسين محركات البحث SEO", icon: Target, link: "/services/seo" },
