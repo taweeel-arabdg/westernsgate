@@ -108,48 +108,34 @@ const Index = () => {
       <WhatsAppButton />
 
       {/* Hero Section */}
-      <section className="relative py-12 md:py-20 overflow-hidden">
+      <section className="relative py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-accent/10 to-transparent"></div>
         <div className="container mx-auto px-4 relative" dir="rtl">
-          <div className="max-w-6xl mx-auto">
-            {/* Image First */}
-            <div className="mb-12 animate-fade-in">
-              <div className="rounded-2xl overflow-hidden shadow-2xl border border-border">
-                <img 
-                  src={heroTeam} 
-                  alt="فريق بوابة الغربية للتسويق الرقمي" 
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-            </div>
-
-            {/* Text Below */}
-            <div className="text-center animate-fade-in">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
-                شريكك الموثوق في التسويق الرقمي
-              </h1>
-              <p className="text-xl md:text-2xl mb-8 text-muted-foreground leading-relaxed max-w-4xl mx-auto">
-                نشتغل على نتائجك. نحلل سوقك، ونبني حملات تمشي مع طريقة تفكير عميلك، ونضبط مسار المبيعات من أول نقرة إلى إقفال الصفقة
-              </p>
-              <div className="flex gap-4 justify-center flex-wrap">
-                <Button 
-                  size="lg" 
-                  className="bg-accent hover:bg-accent/90 text-accent-foreground"
-                  asChild
-                >
-                  <a href="https://wa.me/966557346167?text=مرحباً، أرغب في الاستفسار عن خدماتكم" target="_blank" rel="noopener noreferrer">
-                    تواصل معنا الآن
-                    <ArrowLeft className="mr-2 h-5 w-5" />
-                  </a>
-                </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline"
-                  onClick={() => document.getElementById('services-section')?.scrollIntoView({ behavior: 'smooth' })}
-                >
-                  تعرف على خدماتنا
-                </Button>
-              </div>
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
+              شريكك الموثوق في التسويق الرقمي
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 text-muted-foreground leading-relaxed">
+              نشتغل على نتائجك. نحلل سوقك، ونبني حملات تمشي مع طريقة تفكير عميلك، ونضبط مسار المبيعات من أول نقرة إلى إقفال الصفقة
+            </p>
+            <div className="flex gap-4 justify-center flex-wrap">
+              <Button 
+                size="lg" 
+                className="bg-accent hover:bg-accent/90 text-accent-foreground"
+                asChild
+              >
+                <a href="https://wa.me/966557346167?text=مرحباً، أرغب في الاستفسار عن خدماتكم" target="_blank" rel="noopener noreferrer">
+                  تواصل معنا الآن
+                  <ArrowLeft className="mr-2 h-5 w-5" />
+                </a>
+              </Button>
+              <Button 
+                size="lg" 
+                variant="outline"
+                onClick={() => document.getElementById('services-section')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                تعرف على خدماتنا
+              </Button>
             </div>
           </div>
         </div>
