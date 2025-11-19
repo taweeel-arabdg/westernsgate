@@ -163,7 +163,7 @@ const Index = () => {
 
           {/* Second Row - Left to Right */}
           <div className="flex items-center gap-12 animate-[scroll-ltr_10s_linear_infinite]">
-            {[...partnerLogos.slice(5), ...partnerLogos.slice(0, 5), ...partnerLogos.slice(5), ...partnerLogos.slice(0, 5)].map((logo, index) => (
+            {[...partnerLogos.slice(7), ...partnerLogos.slice(0, 7), ...partnerLogos.slice(7), ...partnerLogos.slice(0, 7)].map((logo, index) => (
               <div key={`row2-${index}`} className="flex-shrink-0 w-40 h-20 bg-background border border-border rounded-lg flex items-center justify-center p-4">
                 <img src={logo} alt={`شريك ${index + 1}`} className="max-w-full max-h-full object-contain" />
               </div>
