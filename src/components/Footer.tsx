@@ -1,12 +1,36 @@
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
-import certifications from "@/assets/certifications-vision2030-sbc.jpg";
+import vision2030 from "@/assets/certifications/vision-2030.png";
+import certificationBadge from "@/assets/certifications/certification-badge.png";
+import saudiBusinessCenter from "@/assets/certifications/saudi-business-center.png";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground pt-16 pb-8">
       <div className="container mx-auto px-4">
+        {/* Certifications Section */}
+        <div className="mb-12 text-center" dir="rtl">
+          <h3 className="font-bold text-lg mb-6">شركاؤنا ومبادراتنا</h3>
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+            <img 
+              src={vision2030} 
+              alt="رؤية المملكة العربية السعودية 2030" 
+              className="h-20 md:h-24 object-contain opacity-90 hover:opacity-100 transition-opacity"
+            />
+            <img 
+              src={certificationBadge} 
+              alt="شهادة معتمدة" 
+              className="h-20 md:h-24 object-contain opacity-90 hover:opacity-100 transition-opacity"
+            />
+            <img 
+              src={saudiBusinessCenter} 
+              alt="المركز السعودي للأعمال" 
+              className="h-20 md:h-24 object-contain opacity-90 hover:opacity-100 transition-opacity"
+            />
+          </div>
+        </div>
+
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8" dir="rtl">
           <div className="col-span-2 md:col-span-1">
             <img src={logo} alt="بوابة الغربية" className="h-12 md:h-16 mb-4 brightness-0 invert" />
@@ -53,20 +77,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/20 pt-8 pb-6">
-          <div className="text-center mb-6">
-            <h3 className="font-bold text-lg mb-4">شركاؤنا ومبادراتنا</h3>
-            <div className="flex justify-center">
-              <img 
-                src={certifications} 
-                alt="رؤية 2030 والمركز السعودي للأعمال" 
-                className="h-32 md:h-40 object-contain"
-              />
-            </div>
-          </div>
-          <div className="text-center">
-            <p>&copy; 2024 بوابة الغربية. جميع الحقوق محفوظة.</p>
-          </div>
+        <div className="border-t border-primary-foreground/20 pt-8 text-center">
+          <p>&copy; 2024 بوابة الغربية. جميع الحقوق محفوظة.</p>
         </div>
       </div>
     </footer>
