@@ -152,11 +152,11 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
               <div className="text-center" ref={salesCount.ref}>
                 <div className="text-4xl font-bold text-accent mb-2">{salesCount.count}</div>
-                <p className="text-muted-foreground">تم تحقيق مبيعات بـ مليون ريال</p>
+                <p className="text-muted-foreground">تم تحقيق مبيعات بالريال</p>
               </div>
               <div className="text-center" ref={adSpendCount.ref}>
                 <div className="text-4xl font-bold text-accent mb-2">{adSpendCount.count}</div>
-                <p className="text-muted-foreground">تم صرف اعلانات على جميع المنصات مليون ريال</p>
+                <p className="text-muted-foreground">تم صرف اعلانات على جميع المنصات بالريال</p>
               </div>
               <div className="text-center" ref={experienceCount.ref}>
                 <div className="text-4xl font-bold text-accent mb-2">{experienceCount.count}</div>
