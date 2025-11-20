@@ -47,10 +47,10 @@ const Header = () => {
               </Button>
             )}
             {!user && (
-              <Button asChild variant="ghost" size="sm">
+              <Button asChild className="bg-primary hover:bg-primary/90" size="sm">
                 <Link to="/auth">
                   <LogIn className="ml-2 h-4 w-4" />
-                  تسجيل الدخول
+                  دخول لوحة التحكم
                 </Link>
               </Button>
             )}

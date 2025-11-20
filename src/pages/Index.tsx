@@ -5,9 +5,8 @@ import ContactForm from "@/components/ContactForm";
 import FAQ from "@/components/FAQ";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, CheckCircle2, Sparkles, Target, Rocket, Award, LogIn } from "lucide-react";
+import { ArrowLeft, CheckCircle2, Sparkles, Target, Rocket, Award } from "lucide-react";
 import { useCountUp } from "@/hooks/useCountUp";
-import { Link } from "react-router-dom";
 import heroTeam from "@/assets/hero-team-real.jpg";
 import furhomeLogo from "@/assets/partners/furhome.svg";
 import biscotiLogo from "@/assets/partners/biscoti.webp";
@@ -136,16 +135,6 @@ const Index = () => {
                 onClick={() => document.getElementById('services-section')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 تعرف على خدماتنا
-              </Button>
-              <Button 
-                size="lg" 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground gap-2"
-                asChild
-              >
-                <Link to="/auth">
-                  <LogIn className="h-5 w-5" />
-                  دخول لوحة التحكم
-                </Link>
               </Button>
             </div>
           </div>
