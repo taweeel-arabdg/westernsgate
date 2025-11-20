@@ -24,9 +24,9 @@ import partner8 from "@/assets/partners/partner-8.png";
 import partner9 from "@/assets/partners/partner-9.avif";
 
 const Index = () => {
-  const projectsCount = useCountUp({ end: 500, suffix: "+" });
-  const satisfactionCount = useCountUp({ end: 98, suffix: "%" });
-  const experienceCount = useCountUp({ end: 10, suffix: "+" });
+  const salesCount = useCountUp({ end: 250, suffix: "M+" });
+  const adSpendCount = useCountUp({ end: 99, suffix: "M+" });
+  const experienceCount = useCountUp({ end: 7, suffix: "+" });
 
   const partnerLogos = [biscotiLogo, mamonaLogo, byotatLogo, logo1, logoMini, furhomeLogo, partner6, sanyLogo, smzLogo, copperLogo, shurfahLogo, partner7, partner8, partner9];
   
@@ -150,13 +150,13 @@ const Index = () => {
               بوابة الغربية هي وكالة تسويق رقمي رائدة في المملكة العربية السعودية. نفخر بخبرتنا الواسعة في تقديم حلول تسويقية متكاملة ساعدت مئات الشركات على تحقيق نمو استثنائي في مبيعاتها وتعزيز حضورها الرقمي.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-              <div className="text-center" ref={projectsCount.ref}>
-                <div className="text-4xl font-bold text-accent mb-2">{projectsCount.count}</div>
-                <p className="text-muted-foreground">مشروع ناجح</p>
+              <div className="text-center" ref={salesCount.ref}>
+                <div className="text-4xl font-bold text-accent mb-2">{salesCount.count}</div>
+                <p className="text-muted-foreground">تم تحقيق مبيعات بـ مليون ريال</p>
               </div>
-              <div className="text-center" ref={satisfactionCount.ref}>
-                <div className="text-4xl font-bold text-accent mb-2">{satisfactionCount.count}</div>
-                <p className="text-muted-foreground">رضا العملاء</p>
+              <div className="text-center" ref={adSpendCount.ref}>
+                <div className="text-4xl font-bold text-accent mb-2">{adSpendCount.count}</div>
+                <p className="text-muted-foreground">تم صرف اعلانات على جميع المنصات مليون ريال</p>
               </div>
               <div className="text-center" ref={experienceCount.ref}>
                 <div className="text-4xl font-bold text-accent mb-2">{experienceCount.count}</div>
