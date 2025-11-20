@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
-import vision2030 from "@/assets/certifications/vision-2030.png";
 import certificationBadge from "@/assets/certifications/certification-badge.png";
 import saudiBusinessCenter from "@/assets/certifications/saudi-business-center.png";
 import { Phone, Mail, MapPin } from "lucide-react";
@@ -13,11 +12,10 @@ const Footer = () => {
         <div className="mb-12 text-center" dir="rtl">
           <h3 className="font-bold text-lg mb-6">شركاؤنا ومبادراتنا</h3>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-            <img 
-              src={vision2030} 
-              alt="رؤية المملكة العربية السعودية 2030" 
-              className="h-20 md:h-24 object-contain opacity-90 hover:opacity-100 transition-opacity"
-            />
+            <div className="flex flex-col items-center justify-center h-20 md:h-24">
+              <div className="text-2xl md:text-3xl font-bold mb-1">رؤية المملكة</div>
+              <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">2030</div>
+            </div>
             <img 
               src={certificationBadge} 
               alt="شهادة معتمدة" 
