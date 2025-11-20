@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
+import certifications from "@/assets/certifications-vision2030-sbc.jpg";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
@@ -52,8 +53,20 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/20 pt-8 text-center">
-          <p>&copy; 2024 بوابة الغربية. جميع الحقوق محفوظة.</p>
+        <div className="border-t border-primary-foreground/20 pt-8 pb-6">
+          <div className="text-center mb-6">
+            <h3 className="font-bold text-lg mb-4">شركاؤنا ومبادراتنا</h3>
+            <div className="flex justify-center">
+              <img 
+                src={certifications} 
+                alt="رؤية 2030 والمركز السعودي للأعمال" 
+                className="h-32 md:h-40 object-contain"
+              />
+            </div>
+          </div>
+          <div className="text-center">
+            <p>&copy; 2024 بوابة الغربية. جميع الحقوق محفوظة.</p>
+          </div>
         </div>
       </div>
     </footer>
