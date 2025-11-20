@@ -68,14 +68,9 @@ const Contact = () => {
                     </div>
                     <div>
                       <div className="font-medium">واتساب</div>
-                      <div className="space-y-1">
-                        <a href="https://wa.me/966557346167" target="_blank" rel="noopener noreferrer" className="block text-muted-foreground hover:text-accent" dir="ltr">
-                          +966 55 734 6167
-                        </a>
-                        <a href="https://wa.me/966549793703" target="_blank" rel="noopener noreferrer" className="block text-muted-foreground hover:text-accent" dir="ltr">
-                          +966 54 979 3703
-                        </a>
-                      </div>
+                      <a href="https://wa.me/966557346167" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent" dir="ltr">
+                        +966 55 734 6167
+                      </a>
                     </div>
                   </div>
                 </div>

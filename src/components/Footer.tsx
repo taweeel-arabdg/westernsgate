@@ -43,19 +43,10 @@ const Footer = () => {
                 href="https://wa.me/966557346167" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="block bg-accent hover:bg-accent/90 text-accent-foreground px-4 py-2 rounded-lg transition-colors text-center mb-2"
-                dir="ltr"
-              >
-                +966 55 734 6167
-              </a>
-              <a 
-                href="https://wa.me/966549793703" 
-                target="_blank" 
-                rel="noopener noreferrer"
                 className="block bg-accent hover:bg-accent/90 text-accent-foreground px-4 py-2 rounded-lg transition-colors text-center"
                 dir="ltr"
               >
-                +966 54 979 3703
+                +966 55 734 6167
               </a>
             </div>
           </div>
