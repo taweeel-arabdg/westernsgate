@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import ContactForm from "@/components/ContactForm";
 import FAQ from "@/components/FAQ";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
@@ -237,15 +236,6 @@ const Index = () => {
 
       {/* FAQ Section */}
       <FAQ />
-
-      {/* Contact Form Section */}
-      <section className="py-16 md:py-24 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto">
-            <ContactForm />
-          </div>
-        </div>
-      </section>
 
       {/* Contact Info Section */}
       <section className="py-16 bg-primary text-primary-foreground">
