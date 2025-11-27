@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import ContactForm from "@/components/ContactForm";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Search, Camera, Code, Megaphone, Palette, Share2, Brain } from "lucide-react";
 
@@ -85,9 +84,6 @@ const Services = () => {
             ))}
           </div>
 
-          <div className="max-w-2xl mx-auto">
-            <ContactForm />
-          </div>
         </div>
       </section>
 

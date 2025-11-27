@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import ContactForm from "@/components/ContactForm";
 import { Palette, Sparkles, Eye, Layers, CheckCircle2 } from "lucide-react";
 
 const Design = () => {
@@ -140,20 +139,6 @@ const Design = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4" dir="rtl">
-          <div className="max-w-2xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
-              جاهز لتصميم هوية بصرية قوية؟
-            </h2>
-            <p className="text-center text-muted-foreground mb-8">
-              تواصل معنا الآن واحصل على استشارة مجانية حول هويتك البصرية
-            </p>
-            <ContactForm />
-          </div>
-        </div>
-      </section>
 
       <Footer />
     </div>

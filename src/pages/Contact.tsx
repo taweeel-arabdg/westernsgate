@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import ContactForm from "@/components/ContactForm";
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 
 const Contact = () => {
@@ -20,10 +19,6 @@ const Contact = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-            <div>
-              <ContactForm />
-            </div>
-
             <div className="space-y-8">
               <div>
                 <h2 className="text-2xl font-bold mb-6">معلومات التواصل</h2>
